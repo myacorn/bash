@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
-# Basic web server setup
-# curl https://raw.githubusercontent.com/myacorn/bash/master/seed.sh | bash -s proj_name
+# Basic web server setup - currently intended for the primary login account on webserver -
+#   not currently intended for setting up the project-specific account on the server
+#   which will also source the virtualenv.
+#
+# FIXME: This should be deployed by ansible from a local copy, not curl from the web
+#
+# Example:
+#     curl https://raw.githubusercontent.com/myacorn/bash/master/seed.sh | bash -s proj_name
 
 # Check whether customisatations already exist in ~/.bashrc
 if grep -q "local customisations" ~/.bashrc; then
