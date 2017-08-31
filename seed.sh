@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Basic web server setup
-# curl http://path/to/seed.sh | bash -s proj_name
+# curl https://raw.githubusercontent.com/myacorn/bash/master/seed.sh | bash -s proj_name
 
 # Check whether customisatations already exist in ~/.bashrc
 if grep -q "local customisations" ~/.bashrc; then
