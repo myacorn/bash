@@ -16,7 +16,8 @@ else
   echo >> ~/.bashrc
   echo '## local customisations' >> ~/.bashrc
   echo 'export PS1="['"$1"']${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "' >> ~/.bashrc
-  echo 'alias proj="cd /media/sf_data/work/projects/"' >> ~/.bashrc
   echo 'alias ..="cd .." ...="cd ../.." ....="cd ../../.." .....="cd ../../../.."' >> ~/.bashrc
+  
+  # sesh is a shortcut to ssh to a machine on our local network by supplying just the final part of the IPv4 address
   sesh() { ssh 192.168.1.$1 $2 $3 $4 $5; }
 fi
