@@ -14,4 +14,5 @@ else
   echo 'export PS1="['"$1"']${debian_chroot:+($debian_chroot)}\u@\h:\w\$ "' >> ~/.bashrc
   echo 'alias ..="cd .." ...="cd ../.." ....="cd ../../.." .....="cd ../../../.."' >> ~/.bashrc
   echo 'alias duh="du -h --max-depth=1"' >> ~/.bashrc
+  echo 'mkcd () { mkdir -p "$@"; cd "$@"; }' >> ~/.bashrc
 fi
